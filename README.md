@@ -18,7 +18,7 @@ Just wrap any widget with `ScrollsToTop` and provide `onScrollsToTop` argument
   Widget build(BuildContext context) {
     return ScrollsToTop(
       onScrollsToTop: _onScrollsToTop,
-      scaffold: Scaffold(
+      child: Scaffold(
         appBar: AppBar(title: const Text('Scroll to top')),
         body: Container(),
       ),
